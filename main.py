@@ -252,7 +252,7 @@ def ensure_directory_exists(directory: str):
 def get_output_path(subfolder: str, filename: str) -> str:
     """获取输出路径"""
     date_folder = format_date_folder()
-    output_dir = Path("output") / date_folder / subfolder
+    output_dir = Path("docs") / date_folder / subfolder
     ensure_directory_exists(str(output_dir))
     return str(output_dir / filename)
 
